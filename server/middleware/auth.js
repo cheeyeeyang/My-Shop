@@ -7,8 +7,7 @@ export default defineEventHandler((event) => {
 
   // Define API routes that require authentication
   const protectedApiRoutes = [
-    '/api/roles',
-    '/api/users'
+    '/api/roles'
   ]
 
   // Skip middleware if route is not protected
