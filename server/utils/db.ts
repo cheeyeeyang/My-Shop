@@ -1,7 +1,7 @@
 import mysql from 'mysql2/promise';
 export const createConnection = async () => {
     return mysql.createPool({
-        host: 'https://168.231.118.214:8090',
+        host: 'localhost',
         user: 'erps_u982896924_vue',
         password: '7Slaos@123456789',
         database: 'erps_u982896924_vue',
