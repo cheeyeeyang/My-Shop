@@ -1,5 +1,5 @@
 import { createConnection } from "../../utils/db";
-import middleWareRoute from '../../middleware/auth.js'
+//import middleWareRoute from '../../middleware/auth.js'
 export default defineEventHandler(async (event) => {
  // middleWareRoute(event);
   try {
