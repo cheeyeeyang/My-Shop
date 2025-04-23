@@ -1,7 +1,7 @@
 import { createConnection } from "../../utils/db";
-import middleWareRoute from '../../middleware/auth.js';
+//import middleWareRoute from '../../middleware/auth.js';
 export default defineEventHandler(async (event) => {
-   middleWareRoute(event);
+   //middleWareRoute(event);
   try {
     const pool = await createConnection();
     const [roles] = await pool.query("SELECT * FROM roles");
