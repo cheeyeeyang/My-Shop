@@ -15,8 +15,6 @@ export default defineEventHandler(async (event) => {
       JOIN function_models b ON a.function_id = b.id
       WHERE a.role_id = ?
     `,[roleId])
-        await pool.end() // Always close the pool after use
-
         return {
             success: true,
             data: permissions,

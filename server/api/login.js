@@ -30,12 +30,13 @@ export default defineEventHandler(async (event) => {
   // Access runtime config through event.context
   const config = useRuntimeConfig()
   const token = jwt.sign(
-    { id: user.id, phone: user.phone },
+    { id: user.id, phone: user.phone},
     config.JWT_SECRET,
     { expiresIn: config.JWT_EXPIRES_IN }
   )
   return {
     data: user,
+    roleId: user.id,
     token,
   }
 })
